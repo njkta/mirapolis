@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mirapolis</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <ul class="structure">
+        <li class="folder active">
+            <div class="icon icon-opened">
+                <img class="folder__img" src="img/opened-folder.svg">
+                <span class="folder__name">Folder 1</span>
+            </div>
+            <ul>
+                <li class="subfolder active">
+                    <div class="icon icon-opened">
+                        <img class="folder__img" src="img/opened-folder.svg">
+                        <span class="folder__name">Folder 1</span>
+                    </div>
+                    <ul>
+                        <li class="file subfolder__file">
+                            <div>
+                                <img class="file__img" src="img/file.svg">
+                                <span class="file__name">File 1.1</span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="file folder__file">
+                    <div>
+                        <img class="file__img" src="img/file.svg">
+                        <span class="file__name">File 1.1</span>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="folder">
+            <div class="icon">
+                <img class="folder__img" src="img/opened-folder.svg">
+                <span class="folder__name">Folder 1</span>
+            </div>
+            <ul>
+                <li class="file folder__file">
+                    <div>
+                        <img class="file__img" src="img/file.svg">
+                        <span class="file__name">File 1.1</span>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="file first-level">
+            <div>
+                <img class="file__img" src="img/file.svg">
+                <span class="file__name">File 1.1</span>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

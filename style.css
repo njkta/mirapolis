@@ -1,0 +1,85 @@
+ul{
+    margin: 0;
+    padding-left: 24px;
+}
+li{
+    list-style: none;
+}
+
+.icon:before,
+.icon-opened:before{
+    content: '';
+    position: absolute;
+    background: url("img/closeed.png") no-repeat center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    left: -18px;
+    top: 14px;
+}
+.icon-opened:before{
+    background: url("img/opened.png") no-repeat center;
+    background-size: contain;
+}
+
+.folder > div,
+.subfolder > div,
+.file > div{
+    padding: 5px;
+}
+li,
+.folder,
+.structure,
+.file{
+    position: relative;
+}
+.folder:before,
+.file:before,
+.subfolder:before,
+.structure:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.folder:before,
+.subfolder:before,
+.structure:before{
+    background: url("img/dot.png") space center;
+    width: 4px;
+    height: calc(100% - 46px);
+    left: 12px;
+}
+.folder:before,
+.subfolder:before{
+    height: calc(100% - 58px);
+    top: 58%;
+}
+.file:before{
+    background: url("img/dot.png") space center;
+    width: 12px;
+    height: 4px;
+    right: 100%;
+}
+.folder__img,
+.file__img{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 5px;
+}
+
+.file{
+    display: none;
+}
+.file.first-level{
+    display: block;
+}
+.folder ul{
+    display: none;
+}
+.folder.active .folder__file,
+.folder.active ul,
+.subfolder.active .subfolder__file{
+    display: block;
+}
